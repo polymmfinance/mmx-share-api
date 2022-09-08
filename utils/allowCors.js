@@ -1,5 +1,5 @@
 export default function allowCors(fn, allow = false) {
-  const whiteListedDomains = ["app.gmx.io", "gmx-interface.pages.dev"]
+  const whiteListedDomains = ["app.madmex.io", "madmex.io"]
   return async (req, res) => {
     res.setHeader("Access-Control-Allow-Credentials", true)
     if (allow) {

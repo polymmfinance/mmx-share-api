@@ -3,14 +3,14 @@ import allowCors from "../utils/allowCors"
 const cloudinary = require("cloudinary").v2
 
 cloudinary.config({
-  cloud_name: "gmx",
+  cloud_name: "madmeerkat",
   api_key: process.env.API_KEY,
   api_secret: process.env.API_SECRET
 })
 
 function uploadScreenshot(screenshot) {
   return new Promise((resolve, reject) => {
-    const uploadOptions = { folder: "gmx" }
+    const uploadOptions = { folder: "madmeerkat" }
     cloudinary.uploader
       .upload_stream(uploadOptions, (error, result) => {
         if (error) reject(error)
