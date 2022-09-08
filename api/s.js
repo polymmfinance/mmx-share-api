@@ -12,7 +12,7 @@ function handler(req, res) {
   const { query } = req
   const imageUrl = getImageUrl(query)
   const ref = sanitizeRef(query.ref)
-  const rootRedirectURL = "https://madmeerkat.io/#/"
+  const rootRedirectURL = "https://madmex.io/#/"
   const referralParameter = ref ? `?ref=${ref}` : ""
   const html = `
     <!doctype html>
